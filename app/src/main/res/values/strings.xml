@@ -10,4 +10,11 @@
     <string name="maximum_images">Maximum number of images:</string>
     <string name="clear_button">Clear training set</string>
     <string name="flip">Flip</string>
+    <string name="title_activity_facebook_login">FacebookLogin</string>
+    <string name="facebook_app_id">210375656375551</string>
+    <string name="fb_login_protocol_scheme">fb210375656375551</string>
+    <string name="facebook_button">Connect with Facebook</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

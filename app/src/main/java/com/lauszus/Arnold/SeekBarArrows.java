@@ -16,7 +16,7 @@
  * e-mail   :  lauszus@gmail.com
  ******************************************************************************/
 
-package com.lauszus.facerecognitionapp;
+package com.lauszus.Arnold;
 
 import android.content.Context;
 import android.content.res.TypedArray;

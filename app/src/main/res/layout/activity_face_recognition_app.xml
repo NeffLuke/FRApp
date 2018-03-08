@@ -58,7 +58,7 @@
 
                 </RadioGroup>
 
-                <com.lauszus.facerecognitionapp.SeekBarArrows
+                <com.lauszus.Arnold.SeekBarArrows
                     android:id="@+id/threshold_face"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
                     SeekBarArrows:max=".5"
                     SeekBarArrows:n_values="500" />
 
-                <com.lauszus.facerecognitionapp.SeekBarArrows
+                <com.lauszus.Arnold.SeekBarArrows
                     android:id="@+id/threshold_distance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                     SeekBarArrows:max=".5"
                     SeekBarArrows:n_values="500" />
 
-                <com.lauszus.facerecognitionapp.SeekBarArrows
+                <com.lauszus.Arnold.SeekBarArrows
                     android:id="@+id/maximum_images"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -89,6 +89,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/arrow_text_margin"
                     android:text="@string/clear_button" />
+                <Button
+                    android:id="@+id/facebook_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/arrow_text_margin"
+                    android:text="@string/facebook_button"
+                    android:onClick="goToLogin"/>
 
             </LinearLayout>
 

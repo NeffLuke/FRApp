@@ -16,12 +16,13 @@
  * e-mail   :  lauszus@gmail.com
  ******************************************************************************/
 
-package com.lauszus.facerecognitionapp;
+package com.lauszus.Arnold;
 
 import android.Manifest;
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.pm.ActivityInfo;
@@ -56,6 +57,9 @@ import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.facebook.*;
+import com.facebook.FacebookActivity;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.LoaderCallbackInterface;
@@ -291,7 +295,14 @@ public class FaceRecognitionAppActivity extends AppCompatActivity implements Cam
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-
+        final Button mFacebookButton =(Button) findViewById(R.id.facebook_button);
+        mFacebookButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), com.lauszus.Arnold.FacebookActivity.class);
+                FaceRecognitionAppActivity.this.startActivity(intent);
+                Log.d(TAG,"ACtivityStarted");
+            }
+        });
         final RadioButton mRadioButtonEigenfaces = (RadioButton) findViewById(R.id.eigenfaces);
         final RadioButton mRadioButtonFisherfaces = (RadioButton) findViewById(R.id.fisherfaces);
 
@@ -473,7 +484,10 @@ public class FaceRecognitionAppActivity extends AppCompatActivity implements Cam
                 }
         }
     }
-
+    public void goToLogin(View view) {
+        Intent Intent = new Intent(this, com.lauszus.Arnold.FacebookActivity.class);
+        startActivity(Intent);
+    }
     @Override
     public void onPause() {
         super.onPause();

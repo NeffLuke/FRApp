@@ -1,7 +1,7 @@
 // Source: https://github.com/opencv/opencv/blob/master/modules/java/generator/src/java/android+JavaCameraView.java
 // Modified to used modified CameraBridgeViewBase
 
-package com.lauszus.facerecognitionapp;
+package com.lauszus.Arnold;
 
 import android.content.Context;
 import android.graphics.ImageFormat;

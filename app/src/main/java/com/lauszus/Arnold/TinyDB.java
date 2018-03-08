@@ -22,7 +22,7 @@
 // Modified version of: https://github.com/kcochibili/TinyDB--Android-Shared-Preferences-Turbo
 // Added getListMat and putListMat methods
 
-package com.lauszus.facerecognitionapp;
+package com.lauszus.Arnold;
 
 import java.io.File;
 import java.io.FileOutputStream;
